@@ -1,0 +1,28 @@
+---
+title: "Simple Latex Table Templates"
+author: "Mindy Mallory"
+date: "March 14, 2016"
+output: pdf_document
+header-includes:
+  \usepackage{booktabs}
+---
+
+# First row merges cells. 
+
+\begin{table*}[h]\centering
+\caption{Determining Intrinsic Value and Time Value of Option Prices }
+\begin{tabular}{@{}ccccccc@{}}
+ \specialrule{1pt}{1pt}{1pt} 
+ \multicolumn{7}{l}{Underlying Dec 2016 Corn, $F = 380.00$}                        \\
+  Strike     &    Call Premium    & Intrinsic Value    & Time Value    &   Put Premium  & Intrinsic Value  & Time Value  \\
+ \specialrule{1pt}{1pt}{1pt} 
+  370        &   36.00            &                    &               & 24.00          &                  &             \\
+             &                    &                    &               &                &                  &             \\
+  380        &   32.00            &                    &               & 30.00          &                  &             \\
+             &                    &                    &               &                &                  &             \\
+  390        &   28.00            &                    &               & 35.50          &                  &             \\
+             &                    &                    &               &                &                  &             \\
+ \specialrule{1pt}{1pt}{1pt}
+\end{tabular}
+\end{table*}
+
